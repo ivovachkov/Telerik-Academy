@@ -1,0 +1,115 @@
+﻿body, div, form, fieldset
+{
+    margin: 0;
+    padding: 0;
+}
+
+.linear-gradient(@from-color, @from-pos, @to-color, @to-pos)
+{
+    background: @from-color;
+    background: -moz-linear-gradient(top, @from-color @from-pos, @to-color @to-pos);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(@from-pos,@from-color), color-stop(@to-pos,@to-color));
+    background: -webkit-linear-gradient(top, @from-color @from-pos,@to-color @to-pos);
+    background: -o-linear-gradient(top, @from-color @from-pos,@to-color @to-pos);
+    background: -ms-linear-gradient(top, @from-color @from-pos,@to-color @to-pos);
+    background: linear-gradient(to bottom, @from-color @from-pos,@to-color @to-pos);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@from-color', endColorstr='@to-color',GradientType=0 );
+}
+
+body
+{
+    width: 960px;
+    font-family: Cambria, 'Palatino Linotype', 'Book Antiqua', 'URW Palladio L', serif;
+    font-size: 18px;
+    padding: 25px;
+    color: white;
+
+    #wrapper
+    {
+        width: 415px;
+        height: 400px;
+        border: 2px solid #444444;
+        border-radius: 15px;
+        .linear-gradient(#eafe5b, 0%, #454544, 100%);
+        padding: 20px 15px;
+        text-align: right;
+
+        fieldset
+        {
+            border: 3px solid #555;
+            border-radius: 5px;
+            padding: 10px 15px 5px 0;
+
+            &:last-of-type
+            {
+                margin-bottom: 15px;
+            }
+
+            legend
+            {
+                font-size: 1.3em;
+                font-style: italic;
+                font-weight: bold;
+                padding: 0 15px;
+            }
+
+            input
+            {
+                border: 2px solid #444;
+                border-radius: 5px;
+                .linear-gradient(#eafe5b, 0%, #454544, 100%);
+                color: white;
+                padding: 7px 15px;
+            }
+
+                input[type="text"], input[type="password"]
+                {
+                    width: 160px;
+                }
+
+                input[type="number"]
+                {
+                    width: 35px;
+					padding: 5px;
+                }
+        }
+
+        button, input[type="reset"]
+        {
+            .linear-gradient(#e3fd28, 0%, #464644, 100%);
+            border: none;
+            border-bottom: 1px solid black;
+            border-radius: 5px;
+            font-size: 1.2em;
+            padding: 5px 15px;
+            color: #333333;
+            margin: 15px;
+
+            &:hover
+            {
+				background: #f1ff8e;
+            }
+        }
+
+        input[type="reset"]
+        {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        button
+        {
+            margin-right: 0;
+        }
+
+        input[type="radio"]
+        {
+            display: none;
+
+            &:checked + label
+            {
+                font-weight: bold;
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+body{
+
+	nav ul{
+		list-style-type:none;
+		margin:0;
+		padding:0;
+
+		li{
+			display:inline-block;
+		}
+	}
+
+	div.image{
+		width:650px;
+
+		input[type="radio"], img{
+			display:none;
+
+			&:checked + img{
+				display:inline-block;
+				width:100%;
+			}
+		}
+	}
+}

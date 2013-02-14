@@ -1,0 +1,45 @@
+body
+{
+	font-family: Arial, Helvetica;
+}
+table
+{
+	border-collapse: collapse;
+	border: solid gray 1px;
+}
+th
+{
+	color: white;
+	font-weight: normal;
+	text-align: left;
+	box-shadow: 0 3px 3px #888888;
+	border: solid gray 1px;
+}
+td, th
+{
+	padding-left: 5px;
+	padding-right: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-left: solid gray 1px;
+}
+thead
+{
+	background-color: #3C3;
+}
+.gray
+{
+	background-color: #DDD;
+}
+img
+{
+	vertical-align:text-top;
+}
+.country, th
+{
+	font-size: 1.1em;
+}
+input[type=checkbox]
+{
+	margin-left: 15px;
+}

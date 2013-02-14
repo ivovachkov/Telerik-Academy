@@ -1,0 +1,93 @@
+﻿html,
+body,
+div,
+ul,
+li,
+span {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: #0094ff;
+  display: none;
+}
+body {
+  width: 960px;
+  padding: 45px 50px;
+  font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'DejaVu Sans Condensed', sans-serif;
+  font-size: 16px;
+  text-align: right;
+}
+body .msg-bar {
+  width: 464px;
+  height: 180px;
+  background: #aaffef;
+  border: 1px solid black;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  padding: 0;
+}
+body .msg-bar li a.msg-bar-btn {
+  float: left;
+  display: block;
+  margin-top: 180px;
+  padding: 10px 15px;
+  border: 1px solid black;
+  zoom: 1;
+  background: #aaffef;
+  background: -moz-linear-gradient(top, #aaffef 0%, #19ffd4 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #aaffef), color-stop(100%, #19ffd4));
+  background: -webkit-linear-gradient(top, #aaffef 0%, #19ffd4 100%);
+  background: -o-linear-gradient(top, #aaffef 0%, #19ffd4 100%);
+  background: -ms-linear-gradient(top, #aaffef 0%, #19ffd4 100%);
+  background: linear-gradient(to bottom, #aaffef 0%, #19ffd4 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@from-color', endColorstr='@to-color', GradientType=0);
+}
+body .msg-bar li a.msg-bar-btn:after {
+  display: block;
+  content: "";
+  height: 0;
+  clear: both;
+}
+body .msg-bar li div.msg-bar-content {
+  display: none;
+}
+body .msg-bar li a:hover + div.msg-bar-content {
+  display: block;
+  position: absolute;
+  top: 60px;
+}
+body .msg-bar li a:hover + div.msg-bar-content ul li {
+  margin-bottom: 10px;
+}
+body .msg-bar li a:hover + div.msg-bar-content ul li span {
+  border-bottom: 1px solid black;
+  padding: 5px 10px 5px 15px;
+  text-align: right;
+  margin-left: 10px;
+  display: inline-block;
+  width: 315px;
+}
+body .msg-bar li a:hover + div.msg-bar-content ul li.me-item span.user {
+  background: url('imgs/me.png') 5px 10px no-repeat;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 5px 10px 5px 25px;
+  text-align: left;
+  width: 50px;
+}
+body .msg-bar li a:hover + div.msg-bar-content ul li.other-item span.user {
+  background: url('imgs/male.png') 5px 10px no-repeat;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 5px 10px 5px 25px;
+  width: 50px;
+}
+body .msg-bar li a:hover {
+  background: #00ddb3;
+  border-top: none;
+}

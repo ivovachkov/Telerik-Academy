@@ -1,0 +1,81 @@
+﻿body 
+{
+    background-color: #3b3b3b;
+}
+
+.container
+{
+    margin: 0px auto;
+    text-align: left;
+    padding: 15px;
+    margin-left: 160px;
+}
+
+header
+{
+    width: 680px;
+    height: 70px;
+    background-color: #323232;
+    padding: 20px;
+    border-bottom: 2px solid #2c2c2c;
+    border-bottom-style:inset;
+    display:block;
+}
+
+    header form label
+    {
+        width: 177px;
+        height: 44px;
+        display:inline-block;
+        margin-top: 20px;
+        padding-left:60px;
+        color: white;
+        font-size: 20px;
+        font-weight:bold;
+        line-height:44px;
+        background-image: url(images/monitor.png);
+        background-position: top left;
+        background-repeat:no-repeat;
+    }
+
+    header form input.text
+    {
+        text-indent: 5px;
+        margin-right: 20px;
+    }
+
+    header form input.button
+    {
+        width: 57px;
+        height: 30px;
+        padding-bottom: 4px;
+        padding-right: 6px;
+        font-family:Arial;
+        color:white;
+        background: url('images/button.png') 0 0 no-repeat #3a3a3a;
+        border-style:none;
+        cursor:pointer;
+    }
+
+.content
+{
+    width: 700px;
+    padding-left:10px;
+}
+
+.content h1
+{
+    color: #fbd61a;
+    font: 28px/68px Georgia;
+}
+
+.content p
+{
+    color:#a4a4a4;
+    font: 13px Verdana;
+    line-height: 23px;
+}
+.content p span
+{
+    color:white;
+}

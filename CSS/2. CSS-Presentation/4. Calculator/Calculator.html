@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="Calculator.css"/>
+</head>
+<body>
+    <div class="main">
+        <form class="winButtons">
+            <input type="button" id="Button1" />&nbsp;Calculator
+            <input type="button" id="minimize" />
+            <input type="button" id="maximize" />
+            <input type="button" id="close" />
+        </form>
+        <div class="mainContainer">
+
+            <nav>
+                <ul>
+                    <li class="menu">View</li>
+                    <li class="menu">Edit</li>
+                    <li class="menu">Help</li>
+                </ul>
+            </nav>
+
+            <form>
+                <input type="text" value="0" size="55" id="textfield" />
+            </form>
+
+            <div class="binary">
+                <div class="bitsRow">
+                    <ul class="zeros">
+                        <li>0000</li> <li>0000</li> <li>0000</li> <li>0000</li> <li>0000</li> <li>0000</li> <li>0000</li> <li>0000</li> 
+                    </ul>
+                </div>
+
+                <div class="bitsRow">
+                    <ul class="bits">
+                        <li>63</li> <li>47</li> <li>32</li> 
+                    </ul>
+                </div>
+
+                <div class="bitsRow">
+                    <ul class="zeros">
+                        <li>0000</li> <li>0000</li> <li>0000</li> <li>0000</li> <li>0000</li> <li>0000</li> <li>0000</li> <li>0000</li> 
+                    </ul>
+                </div>
+
+                <div class="bitsRow">
+                    <ul class="bits">
+                        <li>31</li> <li>15</li> <li>0</li> 
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="radio">
+                <form>
+                    <input type="radio" checked="checked" name="radio1"/>Hex <br />
+                    <input type="radio" name="radio1"/>Dec <br />
+                    <input type="radio" name="radio1"/>Oct <br />
+                    <input type="radio" name="radio1"/>Bin <br />
+                </form>
+            </div>
+
+            <div class="radio second">
+                <form>
+                    <input type="radio" checked="checked" name="radio2"/>Qword <br />
+                    <input type="radio" name="radio2" />Qword <br />
+                    <input type="radio" name="radio2" />Word <br />
+                    <input type="radio" name="radio2" />Byte <br />
+                </form>
+            </div>
+
+            <div class="buttons">
+
+                <div class="row">
+                    <form>
+                        <input type="button" class="inactive" value=" " />
+                        <input type="button" value="Mod" />
+                        <input type="button"  class="inactive" value="A" />
+                        <input type="button" class="inactive" value="MC" />
+                        <input type="button" class="inactive" value="MR" />
+                        <input type="button" class="inactive" value="MS" />
+                        <input type="button" class="inactive" value="M+" />
+                        <input type="button" class="inactive" value="M-" />
+                    </form>
+                </div>
+
+                <div class="row">
+                    <form>
+                        <input type="button" value="(" />
+                        <input type="button" value=")" />
+                        <input type="button" class="inactive" value="B" />
+                        <input type="button" value="←" />
+                        <input type="button" value="CE" />
+                        <input type="button"  value="C" />
+                        <input type="button" value="±" />
+                        <input type="button" class="inactive" value="√" />
+                    </form>
+                </div>
+
+                <div class="row">
+                    <form>
+                        <input type="button" value="RoL" />
+                        <input type="button" value="RoR" />
+                        <input type="button" class="inactive" value="C" />
+                        <input type="button" value="7" />
+                        <input type="button" value="8" />
+                        <input type="button" value="9" />
+                        <input type="button" value="/" />
+                        <input type="button" class="inactive" value="%" />
+                    </form>
+                </div>
+
+                <div class="row">
+                    <form>
+                        <input type="button" value="Or" />
+                        <input type="button" value="Xor" />
+                        <input type="button" class="inactive" value="D" />
+                        <input type="button" value="4" />
+                        <input type="button" value="5" />
+                        <input type="button" value="6" />
+                        <input type="button" value="*" />
+                        <input type="button" class="inactive" value="1/x" />
+                    </form>
+                </div>
+
+                <div class="row">
+                    <form>
+                        <input type="button" value="Lsh" />
+                        <input type="button" value="Rsh" />
+                        <input type="button" class="inactive" value="E" />
+                        <input type="button" value="1" />
+                        <input type="button" value="2" />
+                        <input type="button" value="3" />
+                        <input type="button" value="-" />
+                    </form>
+                </div>
+
+
+                <div class="equals">
+                    <form>
+                        <input type="button" id="equals" value="=" />
+                    </form>
+                </div>
+
+                <div class="row" id="lastRow">
+                    <form>
+                        <input type="button" value="Not" />
+                        <input type="button" value="And" />
+                        <input type="button" class="inactive" value="F" />
+                        <input type="button" id="zero" value="0" />
+                        <input type="button" class="inactive" value="." />
+                        <input type="button" value="+" />
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

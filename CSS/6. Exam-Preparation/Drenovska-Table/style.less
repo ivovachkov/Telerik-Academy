@@ -1,0 +1,117 @@
+﻿html, body, table, thead, tfoot, tbody tr, td, th, label, span, button
+{
+    margin: 0;
+    padding: 0;
+}
+
+.linear-gradient(@from-color, @from-pos, @to-color, @to-pos)
+{
+    background: @from-color;
+    background: -moz-linear-gradient(top, @from-color @from-pos, @to-color @to-pos);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(@from-pos,@from-color), color-stop(@to-pos,@to-color));
+    background: -webkit-linear-gradient(top, @from-color @from-pos,@to-color @to-pos);
+    background: -o-linear-gradient(top, @from-color @from-pos,@to-color @to-pos);
+    background: -ms-linear-gradient(top, @from-color @from-pos,@to-color @to-pos);
+    background: linear-gradient(to bottom, @from-color @from-pos,@to-color @to-pos);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@from-color', endColorstr='@to-color',GradientType=0 );
+}
+
+
+body
+{
+    background: #353535;
+    font-family: sans-serif;
+    font-size: 14px;
+
+    table
+    {
+        //border-collapse: collapse;
+        margin: 65px 0 0 45px;
+        .linear-gradient(white, 0%, #D3E4EE, 100%);
+        border-spacing: 10px 0px;
+        padding: 5px;
+
+        thead
+        {
+            tr
+            {
+                th
+                {
+                    color: white;
+                    padding: 10px 35px 5px 35px;
+                    text-shadow: 1px 1px 2px black;
+                    font-weight: bold;
+                    font-family: 'Times New Roman';
+                    font-size: 1.2em;
+
+
+                    &:first-child
+                    {
+                        .linear-gradient(#6f2390, 0%, #330a4c, 100%);
+
+                        & + th
+                        {
+                            .linear-gradient(#f48a56, 0%, #e54104, 100%);
+
+                            & + th
+                            {
+                                .linear-gradient(#38a5ea, 0%, #0563ad, 100%);
+                            }
+                        }
+                    }
+
+                    &:last-child
+                    {
+                        .linear-gradient(#fecb5e, 0%, #e19d0a, 100%);
+                    }
+
+                    label
+                    {
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        tfoot
+        {
+            td
+            {
+                padding: 20px 5px;
+            }
+
+            button
+            {
+                background: #93be16;
+                border: 1px solid white;
+                border-radius: 5px;
+                color: white;
+                padding: 10px 20px;
+                text-transform: uppercase;
+                font-weight: bold;
+                font-family: 'Times New Roman';
+                font-size: 1.1em;
+            }
+        }
+
+        tbody
+        {
+            tr
+            {
+
+                &:first-child
+                {
+                    text-transform: uppercase;
+                    font-family: 'Times New Roman';
+                    font-weight: bold;
+                }
+            }
+
+            td
+            {
+                padding: 15px 0 10px 20px;
+                border-bottom: 1px solid rgba(211, 228, 238, .6);
+            }
+        }
+    }
+}

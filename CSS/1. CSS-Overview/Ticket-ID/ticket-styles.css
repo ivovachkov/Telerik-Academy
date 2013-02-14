@@ -1,0 +1,50 @@
+body
+{
+	background-color: #595959;
+	font-family: Arial;
+}
+h1
+{
+	color: #A6A6A6;
+	font-weight: normal;
+}
+td
+{
+	padding-left: 15px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom:10px;
+}
+#first
+{
+	padding-top: 0;
+}
+.circle
+{
+	border-radius: 10px;
+	width: 10px;
+	height: 10px;
+	background: #71B47A;
+	display: inline-block;
+}
+.firstcol
+{
+	font-style: italic;
+	color: white;
+}
+.person-data
+{
+	color: #E9D997;
+}
+.sup
+{
+	color: red;
+}
+.orange
+{
+	color: orange;
+}
+.grey
+{
+	color: #B2B2B2;
+}

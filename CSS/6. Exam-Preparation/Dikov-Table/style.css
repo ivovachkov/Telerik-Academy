@@ -1,0 +1,61 @@
+﻿table,
+thead,
+tbody,
+tfoot,
+tr {
+  margin: 0;
+  padding: 0;
+  border-collapse: collapse;
+}
+th,
+td {
+  padding: 5px;
+}
+body {
+  font-family: 'Times New Roman';
+}
+body table {
+  background: #666;
+  width: 300px;
+  height: 200px;
+  border: 2px solid green;
+}
+body table thead {
+  color: white;
+  font-size: 1.2em;
+}
+body table thead th {
+  background: #444;
+  border-radius: 0 0 10px 10px;
+}
+body table thead th:first-of-type {
+  background: #EE6633;
+  content: "No";
+}
+body table tfoot {
+  font-size: 1.2em;
+}
+body table tfoot tr td {
+  text-align: center;
+  font-weight: bold;
+  color: #bbb;
+}
+body table tfoot tr td:last-of-type {
+  background: #4BABAB;
+  border-radius: 15px 0 0 15px;
+  color: white;
+}
+body table tbody tr {
+  border-bottom: 1px solid black;
+  background: #bbb;
+}
+body table tbody tr:nth-of-type(2n) {
+  background: white;
+}
+body table tbody tr td {
+  text-align: center;
+}
+body table tbody tr td:nth-of-type(2n) {
+  text-align: left;
+  padding-left: 0;
+}

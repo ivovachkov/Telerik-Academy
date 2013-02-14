@@ -1,0 +1,116 @@
+﻿html, body, div, ul, li, a, span, img, fieldset, legend, label, select, option, textarea, button
+{
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix()
+{
+    zoom: 1;
+
+    &:after
+    {
+        display: block;
+        content: "";
+        height: 0;
+        clear: both;
+    }
+}
+
+.linear-gradient(@from-color, @from-pos, @to-color, @to-pos)
+{
+    background: @from-color;
+    background: -moz-linear-gradient(top, @from-color @from-pos, @to-color @to-pos);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(@from-pos,@from-color), color-stop(@to-pos,@to-color));
+    background: -webkit-linear-gradient(top, @from-color @from-pos,@to-color @to-pos);
+    background: -o-linear-gradient(top, @from-color @from-pos,@to-color @to-pos);
+    background: -ms-linear-gradient(top, @from-color @from-pos,@to-color @to-pos);
+    background: linear-gradient(to bottom, @from-color @from-pos,@to-color @to-pos);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@from-color', endColorstr='@to-color',GradientType=0 );
+}
+
+div#wrapper
+{
+    padding: 14px 15px;
+
+    ul#popup-box
+    {
+        list-style-type: none;
+
+        li.popup-item
+        {
+            border-top: 1px solid black;
+            width: 100px;
+            padding: 5px;
+            padding-bottom: 7px;
+
+            &:last-of-type
+            {
+                border-bottom: 1px solid black;
+            }
+
+            &:first-of-type > a > span
+            {
+				font-weight: bold;
+            }
+
+            a
+            {
+                text-decoration: none;
+                color: black;
+
+                img
+                {
+                    width: 25px;
+                }
+            }
+
+            div.invisible
+            {
+                display: none;
+            }
+
+            div.popup-content
+            {
+                position: relative;
+
+                a.btn-popup-close
+                {
+                    padding: 0 5px;
+                    position: absolute;
+                    top: -20px;
+                    left: 291px;
+                    border-radius: 5px;
+                    border: 1px solid black;
+                }
+
+                div
+                {
+                    fieldset
+                    {
+                        position: absolute;
+                        top: -35px;
+                        left: 115px;
+                        padding: 15px;
+                        border: 1px solid black;
+
+                        legend
+                        {
+                            font-size: 1.2em;
+                            font-weight: bold;
+							padding: 0 2px;
+                        }
+
+                        button
+                        {
+                            padding: 5px 10px;
+                            .linear-gradient(#C8C8C8, 0%, #696969, 100%);
+                            border-radius: 15px;
+                            border: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

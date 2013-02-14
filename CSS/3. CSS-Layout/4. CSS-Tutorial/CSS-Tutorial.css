@@ -1,0 +1,244 @@
+﻿html
+{
+    background: white;
+}
+
+body
+{
+    margin-left: 90px;
+    padding: 2px;
+    width: 1100px;
+    height: 650px;
+    background: #F1F1F1;
+    border: 1px solid #646464;
+    font-family: Arial;
+}
+
+input[type="button"]
+{
+    width: 120px;
+    height: 30px;
+    border: 2px solid black;
+    background: white;
+    font-size: 16px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+h2
+{
+    height: 20px;
+    font-size: 16px;
+    color: white;
+    background: #808080;
+    padding-left: 7px;
+    padding-top: 2px;
+}
+
+h3
+{
+    margin-top:23px;
+    margin-bottom:15px;
+}
+
+h4
+{
+    height: 20px;
+    font-size: 16px;
+    color: white;
+    background: #808080;
+    padding-top: 2px;
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+
+li
+{
+    list-style-type: none;
+    margin-bottom: -4px;
+}
+
+ul
+{
+    margin-left: -40px;
+    margin-top: -20px;
+}
+
+p
+{
+    font-size: 15px;
+    margin-bottom:5px;
+    margin-top:0;
+}
+
+.start
+{
+    font-family: 'Arno Pro';
+    font-weight: bold;
+}
+
+.red-links
+{
+    font-family: Arial;
+    font-weight: 400;
+    font-size: 14px;
+    color: #cb0000;
+}
+
+.main-content
+{
+    width: 600px;
+    height: 95%;
+    background: white;
+    border: 1px solid #646464;
+    margin-left: 30px;
+    padding: 8px;
+    display: inline-block;
+}
+
+    .main-content .main-head
+    {
+        border-bottom: 2px solid #808080;
+        padding-bottom: 10px;
+    }
+
+        .main-content .main-head h1
+        {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+    .main-content .tutorial article
+    {
+        background: url(images/CSS.png) no-repeat;
+        background-position: top left;
+        padding-left: 130px;
+    }
+
+    .main-content .tutorial
+    {
+        margin-top: -5px;
+    }
+
+    .main-content form .previous
+    {
+        padding-right: 20px;
+    }
+
+    .main-content form .next
+    {
+        padding-left: 35px;
+    }
+
+.footer-buttons
+{
+    border-bottom: 2px solid #808080;
+    border-top: 2px solid #808080;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-top:10px;
+}
+
+.left
+{
+    float: left;
+    padding-left: 5px;
+    width: 170px;
+    height: 100%;
+}
+
+    .left .home > a
+    {
+        text-decoration: none;
+        background: url(images/house.png) no-repeat;
+        padding-left: 20px;
+        color: black;
+        font-size: 16px;
+        font-weight: bold;
+        margin-top: 10px;
+        display: inline-block;
+    }
+
+    .left .left-in
+    {
+        margin-top: -20px;
+    }
+
+    .left .h3
+    {
+        text-decoration: none;
+        font-family: 'Arno Pro';
+        font-weight: Bold;
+        font-size: 17px;
+        color: #cb0000;
+    }
+
+    .left .left-link
+    {
+        text-decoration: none;
+        font-size: 13px;
+        color: black;
+    }
+
+.right
+{
+    float: right;
+    width: 270px;
+    height: 98%;
+    text-align: center;
+}
+
+    .right .right-box
+    {
+        width: 270px;
+        border: 1px solid #646464;
+        margin-top: 1px;
+    }
+
+    .right .right-links
+    {
+        margin-bottom: -1px;
+    }
+
+    .right form
+    {
+        margin-bottom: 25px;
+        margin-top: 5px;
+    }
+
+    .right input[type="submit"]
+    {
+        font-weight: bolder;
+    }
+
+    .right .in
+    {
+        margin-top:2px;
+        margin-bottom:5px;
+    }
+
+#styles
+{
+    background: #9af6fc;
+    width: 100px;
+    height: 30px;
+    padding-top: 10px;
+    margin-left: 85px;
+    margin-bottom: 5px;
+    border: 1px solid #1c2f9c;
+    background: #9af6fc;
+    text-decoration: none;
+}
+
+    #styles > a
+    {
+        text-decoration:none;
+        color:#16dbff;
+        font-weight:bold;
+    }
+
+#first-right-in
+{
+    margin-bottom:3px;
+    margin-top:-25px;
+}

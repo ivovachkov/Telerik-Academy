@@ -1,0 +1,91 @@
+﻿html, body, div, ul, li, a
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    font-family: Verdana, Geneva, 'DejaVu Sans', sans-serif;
+    font-size: 14px;
+
+    div#cssmenu
+    {
+        width: 680px;
+        background: #CFCFCF;
+        margin: 20px 10px;
+        padding: 0 135px;
+        border-bottom: 5px solid #0079B2;
+
+        li
+        {
+            display: inline-block;
+            font-weight: bold;
+            width: 100px;
+            margin-right: 10px;
+            padding: 10px;
+            position: relative;
+            text-align: center;
+
+            ul
+            {
+                display: none;
+            }
+
+            &:hover
+            {
+                cursor: pointer;
+            }
+
+                &:hover > ul
+                {
+                    display: block;
+                    position: absolute;
+                    top: 37px;
+                    left: 0;
+                    width: 200px;
+                    background: #CFCFCF;
+                    border: 2px solid #0079B2;
+
+                    & > li
+                    {
+                        width: 90%;
+                        padding: 10px;
+                        font-size: 0.9em;
+                        text-align: left;
+
+                        &:hover
+                        {
+                            background: gray;
+
+                            a
+                            {
+                                color: white;
+                            }
+                        }
+                    }
+                }
+
+            &.active
+            {
+                background-color: #0079B2;
+                width: 100px;
+                height: 30px;
+                position: absolute;
+                top: 10px;
+                left: 25px;
+
+                a
+                {
+                    color: white;
+                }
+            }
+
+            a
+            {
+                text-decoration: none;
+                color: #70686C;
+            }
+        }
+    }
+}
