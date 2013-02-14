@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1. Kaspichan Numbers", "1. Kaspichan Numbers\1. Kaspichan Numbers.csproj", "{02D7174A-4594-4C1E-8B1B-18F556532A3C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2. Greedy Dwarf", "2. Greedy Dwarf\2. Greedy Dwarf.csproj", "{410DFDF4-5705-4186-AC87-A2B11345EDE0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3. Console Justification", "3. Console Justification\3. Console Justification.csproj", "{62F90C28-68EA-4E8F-930D-3DBA6515D946}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{02D7174A-4594-4C1E-8B1B-18F556532A3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02D7174A-4594-4C1E-8B1B-18F556532A3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02D7174A-4594-4C1E-8B1B-18F556532A3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02D7174A-4594-4C1E-8B1B-18F556532A3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{410DFDF4-5705-4186-AC87-A2B11345EDE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{410DFDF4-5705-4186-AC87-A2B11345EDE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{410DFDF4-5705-4186-AC87-A2B11345EDE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{410DFDF4-5705-4186-AC87-A2B11345EDE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62F90C28-68EA-4E8F-930D-3DBA6515D946}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62F90C28-68EA-4E8F-930D-3DBA6515D946}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62F90C28-68EA-4E8F-930D-3DBA6515D946}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62F90C28-68EA-4E8F-930D-3DBA6515D946}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
