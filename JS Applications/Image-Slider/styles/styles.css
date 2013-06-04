@@ -1,0 +1,17 @@
+﻿#container {
+    margin: 0 auto;
+    width: 500px;
+    height: 350px;
+}
+
+#slider-btns{
+    text-align: center;
+}
+
+#container > div{
+    margin: 10px 0;
+}
+
+#container > img{
+    margin: 0 2.5px;
+}
